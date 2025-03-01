@@ -1,26 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="d-flex flex-column min-vh-100">
+
+    <NavbarMain :activeComponent="selectedComponent" @changeComponent="changeComponent" />
+
+    <!-- Dynamic Content -->
+    <div class="container flex-grow-1">
+      <!-- <component :is="selectedComponent" /> -->
+      <component :is="selectedComponent" @changeComponent="changeComponent" />
+    </div>
+
+    <footer class="bg-pale py-4 mt-auto">
+      <p class="text-center mb-0 px-2">
+        Copyright © 2023 All Rights Reserved, Object-ions
+      </p>
+    </footer>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavbarMain from './components/NavbarMain.vue';
+import HomePage from './components/HomePage.vue';
+import BeansList from './components/BeansList.vue';
+import FactsList from './components/FactsList.vue';
+import RecipesList from './components/RecipesList.vue';
+import CombinationsList from './components/CombinationsList.vue';
+import HistoryList from './components/HistoryList.vue';
 
 export default {
-  name: 'App',
+  data() {
+    return {
+      selectedComponent: "HomePage", // Default component
+    };
+  },
   components: {
-    HelloWorld
-  }
-}
+    NavbarMain,
+    HomePage,
+    BeansList,
+    FactsList,
+    RecipesList,
+    CombinationsList,
+    HistoryList,
+  },
+  methods: {
+    changeComponent(component) {
+      this.selectedComponent = component; // Dynamically switch the component
+    },
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

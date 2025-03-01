@@ -1,5 +1,12 @@
 # jelly-beans
 
+
+npm install axios
+npm install sass sass-loader --save-dev
+npm install animate.css --save
+npm install vue-loading-overlay
+
+
 ## Project setup
 ```
 npm install
