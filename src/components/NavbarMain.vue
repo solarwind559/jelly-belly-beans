@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 pb-md-0">
         <div class="container-fluid">
-            <a class="logo" href="/">
+            <a class="logo" href="https://solarwind559.github.io/jelly-belly-beans/">
                 <img class="" :src="require('@/assets/jellybean.png')" alt="Logo" />
             </a>
             <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

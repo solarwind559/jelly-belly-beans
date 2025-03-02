@@ -7,7 +7,7 @@
                 @mouseenter="addAnimation"
                             @mouseleave="removeAnimation" 
                             :class="{ 'animate__animated animate__pulse': isHovered }">
-                    <a href="/"                            >
+                    <a href="https://solarwind559.github.io/jelly-belly-beans/"                            >
                         <img class="" :src="require('@/assets/mandarin-flavor.png')" 
                             alt="Logo" />
                     </a>

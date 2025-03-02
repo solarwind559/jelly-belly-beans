@@ -53,15 +53,13 @@ body {
 
 .navbar {
     .navbar-nav {
-        gap: 3px;
+        gap: 1px;
 
         .nav-item {
             &:hover {
                 background-color: $pale-red;
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
-                // border-left: $primary-red 1px solid;
-                // border-right: $primary-red 1px solid;
             }
 
             .nav-link {
@@ -71,8 +69,6 @@ body {
                 font-weight: 400;
                 border: transparent 1px solid;
                 border-radius: 15px;
-                // padding: 6px 10px 7px;
-
             }
         }
 
@@ -124,16 +120,15 @@ body {
     }
 }
 
-.beans-list {
-    .card {
+.beans-list, .beans-list-preview {
+    .card-img-wrap {
+        max-width: 240px;
+        img {
+            width: 100%;
+        }
         &:hover {
             cursor: pointer;
         }
-    }
-
-    img {
-        max-height: 155px;
-        object-fit: contain;
     }
 }
 
@@ -243,8 +238,6 @@ body {
             padding: 10px;
             border-radius: 15px;
             font-size: 2.2rem;
-
-            &:hover {}
         }
     }
 
@@ -276,8 +269,6 @@ body {
         color: transparent;
         border: 4px solid transparent;
     }
-
-    .navbar-toggler-icon {}
 }
 
 .wrap-preview-light {
@@ -343,6 +334,13 @@ body {
         border: 1px solid $primary-red;
     }
 }
+
+.beans-list, .recipe-list, .combinations-list {
+    .card {
+        cursor: pointer;
+    }
+}
+
 
 .recipe-img-wrap {
     max-width: 500px;
