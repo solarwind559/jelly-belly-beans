@@ -11,7 +11,7 @@
 
     <footer class="footer bg-pale py-3 mt-auto">
       <NavbarFooter :activeComponent="selectedComponent" @changeComponent="changeComponent" />
-      <p class="text-center mb-0 px-2">
+      <p class="text-center mb-0 px-2 mt-3">
         Copyright © 2023 All Rights Reserved, Object-ions
       </p>
     </footer>

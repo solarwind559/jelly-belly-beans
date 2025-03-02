@@ -246,8 +246,11 @@ body {
 .footer p {
   font-size: 0.9rem;
 }
-.footer .footer-img img {
+.footer .footer-img {
   max-width: 250px;
+}
+.footer .footer-img img {
+  max-width: 100%;
   margin-top: -15px;
 }
 .footer .navbar-footer {

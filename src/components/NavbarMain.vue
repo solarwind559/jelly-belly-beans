@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light pt-3 pb-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 pb-md-0">
         <div class="container-fluid">
             <a class="logo" href="/">
                 <img class="" :src="require('@/assets/jellybean.png')" alt="Logo" />
@@ -12,23 +12,23 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
 
-                        <li class="nav-item pb-3 px-1" :class="{ active: activeComponent === 'BeansList' }">
+                        <li class="nav-item pb-lg-3 px-1" :class="{ active: activeComponent === 'BeansList' }">
                             <a class="nav-link" href="#"
                                 @click.prevent="$emit('changeComponent', 'BeansList')">Beans</a>
                         </li>
-                        <li class="nav-item pb-3 px-1" :class="{ active: activeComponent === 'FactsList' }">
+                        <li class="nav-item pb-lg-3 px-1" :class="{ active: activeComponent === 'FactsList' }">
                             <a class="nav-link" href="#"
                                 @click.prevent="$emit('changeComponent', 'FactsList')">Facts</a>
                         </li>
-                        <li class="nav-item pb-3 px-1" :class="{ active: activeComponent === 'RecipesList' }">
+                        <li class="nav-item pb-lg-3 px-1" :class="{ active: activeComponent === 'RecipesList' }">
                             <a class="nav-link" href="#"
                                 @click.prevent="$emit('changeComponent', 'RecipesList')">Recipes</a>
                         </li>
-                        <li class="nav-item pb-3 px-1" :class="{ active: activeComponent === 'CombinationsList' }">
+                        <li class="nav-item pb-lg-3 px-1" :class="{ active: activeComponent === 'CombinationsList' }">
                             <a class="nav-link" href="#"
                                 @click.prevent="$emit('changeComponent', 'CombinationsList')">Combinations</a>
                         </li>
-                        <li class="nav-item pb-3 px-1" :class="{ active: activeComponent === 'HistoryList' }">
+                        <li class="nav-item pb-lg-3 px-1" :class="{ active: activeComponent === 'HistoryList' }">
                             <a class="nav-link" href="#"
                                 @click.prevent="$emit('changeComponent', 'HistoryList')">History</a>
                         </li>
