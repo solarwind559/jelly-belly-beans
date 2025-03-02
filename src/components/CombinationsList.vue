@@ -5,7 +5,7 @@
       <div v-for="combination in combinations" :key="combination.combinationId" class="col">
         <div class="card h-100" @click="viewCombinationDetails(combination.combinationId)">
           <div class="card-body">
-            <h5 class="card-title">{{ combination.name }}</h5>
+            <h5 class="card-title mb-0">{{ combination.name }}</h5>
             <p class="card-text">{{ combination.description }}</p>
           </div>
         </div>

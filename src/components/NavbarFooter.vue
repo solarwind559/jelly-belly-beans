@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar-footer navbar-expand-lg bg-light pt-3 pb-0">
+    <nav class="navbar-footer navbar-expand-lg pt-3 pb-0">
         <div class="container-fluid">
             <div class=" d-flex justify-content-center">
 

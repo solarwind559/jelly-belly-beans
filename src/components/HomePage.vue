@@ -3,7 +3,7 @@
         <div>
             <div class="viewport">
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 d-none d-md-block">
                         <div class="homepage-img mx-auto text-center">
                             <img :src="require('@/assets/front-page-bean.png')" alt="Icon" class="jelly-bean-main" />
                         </div>

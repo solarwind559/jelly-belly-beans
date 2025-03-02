@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="facts-list pb-4">
         <h1 class="text-center py-5">Jelly Belly Facts</h1>
         <div v-if="facts.length > 0" class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
             <div v-for="fact in facts" :key="fact.factId" class="col">

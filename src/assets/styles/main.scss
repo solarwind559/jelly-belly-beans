@@ -204,12 +204,7 @@ body {
         background-color: $paler-red;
         border-radius: 10px;
     }
-
-    // .card-text {
-    //     padding-right: 15px;
-    //     padding-left: 15px;
-    // }
-
+    
     .arrow {
         padding-left: 15px;
     }
@@ -339,6 +334,13 @@ body {
                 background-color: $pale-red;
             }
         }
+    }
+}
+.beans-list, .recipe-list, .facts-list, .combinations-list {
+    .card {
+        background-color: $paler-red;
+        border-radius: 10px;
+        border: 1px solid $primary-red;
     }
 }
 

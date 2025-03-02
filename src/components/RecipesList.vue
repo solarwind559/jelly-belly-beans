@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="recipe-list">
     <h1 class="text-center py-5">Jelly Belly Recipes</h1>
     <div v-if="!selectedRecipeId && recipes.length > 0" class="row row-cols-1 row-cols-md-2 g-4">
       <div v-for="recipe in recipes" :key="recipe.recipeId" class="col">
