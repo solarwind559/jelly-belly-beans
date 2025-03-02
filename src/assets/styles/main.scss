@@ -1,4 +1,5 @@
 $primary-red: #e83a4b;
+$secondary-red: #fbd6d3;
 $pale-red: #eeeae6;
 $paler-red: #f9f5f4;
 
@@ -50,7 +51,7 @@ body {
     background-color: $pale-red;
 }
 
-nav {
+.navbar {
     .navbar-nav {
         gap: 3px;
 
@@ -76,15 +77,17 @@ nav {
         }
 
     }
+
     .active {
         background-color: $pale-red;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-    
+
         .nav-link {
             font-weight: 700;
         }
     }
+
     .logo {
         margin-top: -15px;
     }
@@ -191,10 +194,6 @@ nav {
     }
 }
 
-.recipe-img {
-    max-width: 500px;
-}
-
 .happy-bean {
     max-width: 180px;
 }
@@ -218,8 +217,16 @@ nav {
 
 
 .homepage {
+    .viewport {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
     h1 {
-        font-size: 4rem;
+        font-size: 4.2rem;
     }
 
     h2 {
@@ -233,18 +240,23 @@ nav {
         font-family: "Lobster", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 2.5rem;
-        background-color: $paler-red;
+        margin-top: 10px;
 
         a {
             text-decoration: none;
             color: $primary-red;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 2.2rem;
+
+            &:hover {}
         }
     }
 
     .homepage-img {
         display: inline-block;
         overflow: hidden;
+
 
         .jelly-bean-main {
             max-width: 500px;
@@ -254,7 +266,7 @@ nav {
             transition: filter 2s ease-in-out;
 
             &:hover {
-                filter: hue-rotate(50deg);
+                filter: hue-rotate(360deg);
             }
         }
 
@@ -271,4 +283,67 @@ nav {
     }
 
     .navbar-toggler-icon {}
+}
+
+.wrap-preview-light {
+    background-color: $paler-red;
+    padding: 2%;
+    border-radius: 20px;
+
+    .card {
+        border-radius: 10px;
+    }
+}
+
+.wrap-preview-mid {
+    background-color: $secondary-red;
+    padding: 2%;
+    border-radius: 20px;
+
+    .card {
+        border-radius: 10px;
+    }
+}
+
+
+.jelly-cherry-flavor {
+    width: 88px;
+    height: 92px;
+}
+
+.footer {
+    p {
+        font-size: 0.9rem;
+    }
+
+    .footer-img {
+        img {
+            max-width: 250px;
+            margin-top: -15px;
+        }
+    }
+
+    .navbar-footer {
+        gap: 2px;
+
+        .nav-link {
+            font-size: 0.9rem;
+            padding-left: 10px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-radius: 7px;
+            font-family: "Poppins", sans-serif;
+
+            &:hover {
+                background-color: $pale-red;
+            }
+        }
+    }
+}
+
+.recipe-img-wrap {
+    max-width: 500px;
+    .recipe-img {
+        max-width: 100%;
+    }
 }

@@ -19,7 +19,9 @@
 
     <div class="row">
       <div class="col-12 col-md-6">
-        <img :src="recipe.imageUrl" :alt="recipe.name" class="recipe-img mb-3" />
+        <div class="recipe-img-wrap">
+          <img :src="recipe.imageUrl" :alt="recipe.name" class="recipe-img mb-3" />
+        </div>
         <h5>Directions:</h5>
         <ol>
           <li v-for="(direction, index) in recipe.directions" :key="index">
@@ -53,8 +55,11 @@
       </div>
 
     </div>
-
-    <button class="btn btn-secondary mt-3" @click="$emit('close')">Back to Recipes</button>
+    <div class="my-4">
+        <button class="arrow-btn" @click="$emit('close')"> 
+            <img :src="require('@/assets/svg-icons/arrow-strawberry-back.svg')" alt="Icon" width="24" height="24" />
+        </button>
+    </div>
   </div>
   <div v-else>
     <div class="loading-container">

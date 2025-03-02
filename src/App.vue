@@ -9,7 +9,8 @@
       <component :is="selectedComponent" @changeComponent="changeComponent" />
     </div>
 
-    <footer class="bg-pale py-4 mt-auto">
+    <footer class="footer bg-pale py-3 mt-auto">
+      <NavbarFooter :activeComponent="selectedComponent" @changeComponent="changeComponent" />
       <p class="text-center mb-0 px-2">
         Copyright © 2023 All Rights Reserved, Object-ions
       </p>
@@ -19,6 +20,7 @@
 
 <script>
 import NavbarMain from './components/NavbarMain.vue';
+import NavbarFooter from './components/NavbarFooter.vue';
 import HomePage from './components/HomePage.vue';
 import BeansList from './components/BeansList.vue';
 import FactsList from './components/FactsList.vue';
@@ -34,6 +36,7 @@ export default {
   },
   components: {
     NavbarMain,
+    NavbarFooter,
     HomePage,
     BeansList,
     FactsList,
